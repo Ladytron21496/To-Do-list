@@ -1,0 +1,95 @@
+body{
+  /* background: #83a4d4;
+background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
+background: linear-gradient(to right, #b6fbff, #83a4d4);  */
+
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 800% 800%;
+	animation: gradientBG 15s ease infinite;
+
+
+
+}
+
+.cbox
+{
+  margin-left: 400px;
+}
+
+.list-item
+{
+  font-family: 'Liu Jian Mao Cao', cursive;
+ display: inline-block;
+  width:200px;
+  border-bottom: 1px solid grey;
+  font-size: 30px;
+  padding:10px;
+  margin-left: 40px;
+  margin-top:5px;
+  margin-bottom: 5px;
+  background: #7F00FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ opacity: 5;
+}
+
+.list-head
+{
+  margin-top:10px;
+
+}
+
+h1
+{
+  font-family: 'Liu Jian Mao Cao', cursive;
+  margin-left:35%;
+  margin-bottom:5%;
+  font-size: 30px;
+
+}
+
+
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  padding-bottom: 6px;
+  border-width: 0;
+  font-family: 'Liu Jian Mao Cao', cursive;
+  font-size:20px;
+}
+input[type="text"] {
+  font-family: 'Liu Jian Mao Cao', cursive;
+  text-align: center;
+  height: 30px;
+  top: 10px;
+  border: none;
+  padding:10px;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 200px;
+  margin-left: 462px;
+}
+
+input[type="checkbox"]:checked+p
+{
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}

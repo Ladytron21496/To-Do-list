@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="css\styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+<div class="card">
+<h1> <%= kindOfDay %> :) </h1>
+</div>
+
+<!-- <ul class="list-head"> -->
+<!-- <li class="list-item"> Happy </li>
+<li class="list-item"> Sad </li> -->
+
+
+<% for(var i=0;i<listItem.length;i++) { %>
+<div class="dj">
+  <input class="cbox "type="checkbox"></input>
+  <p class="list-item"> <%= listItem[i] %> </p>
+</div>
+<% } %>
+
+<!-- </ul> -->
+
+<form  method="post">
+
+<input class="field"type="text" name="ob" value="">
+<button type="submit" name="button1" value="b1">+</button>
+<button type="submit" name="button2" value="b2">-</button>
+</form>
+
+
+</body>
+
+</html>
